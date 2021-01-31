@@ -1,0 +1,8 @@
+<h1 class="animated fadeIn">{{ result }}</h1>
+<hr>
+
+<div class="card-columns animated fadeIn">
+
+    <app-character-card [character]="character" [index]="character.id" *ngFor="let character of characters"></app-character-card>
+
+</div>

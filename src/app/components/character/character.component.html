@@ -1,0 +1,23 @@
+<h1 class="animated fadeIn">{{ character.nombre | uppercase }}</h1>
+<hr>
+
+<div class="row animated fadeIn">
+    <div class="col-md-4">
+
+        <img [src]="character.img" class="img-fluid customImg" [alt]="character.nombre">
+        <br><br>
+        <a [routerLink]="['/characters']" class="btn btn-outline-danger btn-block">Back</a>
+
+    </div>
+
+    <div class="col-md-8">
+        <h3>Game: {{ character.juego }}</h3>
+        <hr>
+        <p>
+            {{ character.bio }}
+        </p>
+        <div>
+            <strong>First Apparence: </strong> {{ character.aparicion | date }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card animated FadeIn fast">
+    <img [src]="character.img" class="card-img-top customImg" [alt]="character.nombre">
+    <div class="card-body">
+        <h5 class="card-title">{{character.nombre}}</h5>
+        <p class="card-text text-truncate">{{character.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{character.juego}}</small></p>
+    </div>
+
+    <!-- Redireccionar por medio de una función -->
+    <button (click)="viewCharacter()" class="btn btn-outline-primary btn-block">
+        View more...
+    </button>
+
+    <!-- Redireccionar por medio de routerLink -->
+    <!-- <a [routerLink]="['/character',i]" class="btn btn-outline-primary btn-block">
+        View more...
+    </a> -->
+
+</div>
